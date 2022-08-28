@@ -1,0 +1,8 @@
+2022-08-28 15:52:56,553 ERROR Internal Server Error: /news/ D:\Projects\SkillFactoryTasks\D7\.env\lib\site-packages\django\utils\log.py (<class 'NameError'>, NameError("name 'sdasd' is not defined"), <traceback object at 0x000001F3ECAFFE80>)
+Traceback (most recent call last):
+  File "D:\Projects\SkillFactoryTasks\D7\.env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\SkillFactoryTasks\D7\NewsPaper\myapp\mymiddleware.py", line 15, in __call__
+    response.template_name = prefix + response.template_name[0] + sdasd
+NameError: name 'sdasd' is not defined
+2022-08-28 15:52:58,063 ERROR "GET /news/ HTTP/1.1" 500 145 D:\Projects\SkillFactoryTasks\D7\.env\lib\site-packages\django\core\servers\basehttp.py None
